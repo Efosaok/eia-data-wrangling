@@ -1,0 +1,69 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "monthly-prices",
+      "path": "/data/henry_hub_natural_gas_prices_monthly.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "string",
+            "format": "default",
+            "title": "Date"
+          },
+          {
+            "name": "Price",
+            "type": "number",
+            "format": "default",
+            "title": "Price"
+          }
+        ]
+      }
+    },
+    {
+      "name": "daily-prices",
+      "path": "/data/henry_hub_natural_gas_prices_daily.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "string",
+            "format": "default",
+            "title": "Date"
+          },
+          {
+            "name": "Price",
+            "type": "string",
+            "format": "default",
+            "title": "Price"
+          }
+        ]
+      }
+    }
+  ],
+  "keywords": [
+    "eia",
+    "pandas",
+    "natural-gas-prices"
+  ],
+  "name": "henry-hub-gas-prices",
+  "title": "Natural gas prices from henry hub",
+  "homepage": "https://github.com/Efosaok/eia-data-wrangling",
+  "version": "1.0.0",
+  "contributors": [
+    {
+      "title": "Efosa Okpugie",
+      "role": "author"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "CC0-1.0",
+      "title": "CC0 1.0",
+      "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ]
+}
